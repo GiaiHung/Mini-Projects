@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.time-select,
+.player-container,
+.sound-picker {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    flex: 1;
+    height: 80%;
+}
+
+.player-container {
+    position: relative;
+}
+
+.player-container svg {
+    position: absolute;
+    height: 60%;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%) rotate(-90deg);
+    pointer-events: none;
+}
+
+.title {
+    position: absolute;
+    top: 5%; left: 50%;
+    transform: translate(-50%, -5%);
+    font-size: 3rem;
+    text-align: center;
+    font-weight: bold;
+    background: linear-gradient(to left, rgb(112, 101, 214), rgb(230, 106, 213));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: inline;
+}
+
+.play {
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+}
+
+.time-display {
+    position: absolute;
+    bottom: 3%;
+    text-align: center;
+    color: rebeccapurple;
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+.time-select button, 
+.sound-picker button {
+    background: none;
+    border: 3px solid #eee;
+    color: #eee;
+    font-size: 20px;
+    border-radius: 10px;
+    padding: 1rem;
+    cursor: pointer;
+    transition: all 0.3s linear;
+}
+
+.time-select button:hover {
+    border: 3px solid #fff;
+    background-color: #fff;
+    color: #444;
+}
+
+.sound-picker button {
+    border: none;
+}
+
+.sound-picker button:nth-child(1) {
+    background-color: rgba(245, 21, 21);
+    border-radius: 50%;
+}
+
+.sound-picker button:nth-child(2) {
+    background-color: rgba(31, 34, 212);
+    border-radius: 50%;
+}
+
+video {
+    position: fixed;
+    top: 0%; left: 0%;
+    width: 100%;
+    z-index: -10;
+}
+

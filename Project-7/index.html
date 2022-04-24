@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"> <!--Verson 5.15.4-->
+    <link rel="stylesheet" href="./style.css">
+    <title>Project 7</title>
+</head>
+<body>
+    <section class="game">
+        <!-- SCORE -->
+        <div class="score">
+            <div class="player-score">
+                <h2>Player</h2>
+                <p>0</p>
+            </div>
+            <div class="computer-score">
+                <h2>Computer</h2>
+                <p>0</p>
+            </div>
+        </div>
+
+        <!-- INTRO -->
+        <div class="intro fadeIn">
+            <h2>Rock Paper and Scissors</h2>
+            <button>Let's play</button>
+        </div>
+
+        <!-- MATCH -->
+        <div class="match fadeOut">
+            <h2 class="current-state">Choose your Option</h2>
+            <div class="hands">
+                <img src="./img/rock.png" class="player-hand" alt="rock">
+                <img src="./img/rock.png" class="computer-hand" alt="rock">
+            </div>
+            <div class="options">
+                <button class="rock">rock</button>
+                <button class="scissors">scissors</button>
+                <button class="paper">paper</button>
+            </div>
+        </div>
+    </section>
+    
+    <script src="./main.js"></script>
+</body>
+</html>
